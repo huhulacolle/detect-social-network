@@ -1,0 +1,32 @@
+{
+  "name": "detect-social-network",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev": "ts-node test.ts",
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huhulacolle/detect-social-network.git"
+  },
+  "keywords": [
+    "detect-social-network"
+  ],
+  "author": "Hugo Araujo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huhulacolle/detect-social-network/issues"
+  },
+  "homepage": "https://github.com/huhulacolle/detect-social-network#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6"
+  }
+}
