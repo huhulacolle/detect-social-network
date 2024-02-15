@@ -4,10 +4,8 @@
 name: Node.js Package
 
 on:
-  push:
-    branches:
-      - release/*
-      - hotfix/*
+  release:
+    types: [created]
 
 jobs:
   publish-npm:
@@ -22,19 +20,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NODE_AUTH_TOKEN}}
-      - name: Checkout main branch
-        run: |
-          git checkout main
-          git pull
-      - name: Merge and push
-        run: |
-          git merge --no-ff "${GITHUB_REF#refs/heads/}"
-          git push origin main
-      - name: Checkout develop branch
-        run: |
-          git checkout develop
-          git pull
-      - name: Merge main into develop and push
-        run: |
-          git merge --no-ff main
-          git push origin develop
