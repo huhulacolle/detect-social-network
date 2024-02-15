@@ -444,6 +444,9 @@ const socialNetworkRegex: any = {
     /youtube\.vn$/,
     /youtube\.voto$/,
   ],
+  test: [
+    /test\.com$/,
+  ],
 }
 
 export default socialNetworkRegex;
