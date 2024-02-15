@@ -59,6 +59,8 @@ const socialNetworkRegex: any = {
   ],
   github: [
     /github\.com$/,
+  ], 
+  gitlab: [
     /gitlab\.com$/,
   ],
   instagram: [
