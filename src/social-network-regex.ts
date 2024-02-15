@@ -57,12 +57,8 @@ const socialNetworkRegex: any = {
     /m\.facebook\.com$/,
     /com\.facebook\.lite$/,
   ],
-  github: [
-    /github\.com$/,
-  ], 
-  gitlab: [
-    /gitlab\.com$/,
-  ],
+  github: [/github\.com$/],
+  gitlab: [/gitlab\.com$/],
   instagram: [
     /com\.instagram\.android$/,
     /instagram\.com$/,
@@ -446,6 +442,20 @@ const socialNetworkRegex: any = {
     /youtube\.vn$/,
     /youtube\.voto$/,
   ],
-}
+  dailymotion: [
+    /dailymotion\.com$/,
+    /dailymotion\.fr$/,
+    /dailymotion\.co\.uk$/,
+    /dailymotion\.de$/,
+    /dailymotion\.es$/,
+    /dailymotion\.it$/,
+    /dailymotion\.be$/,
+    /dailymotion\.com\.br$/,
+    /dailymotion\.jp$/,
+    /dailymotion\.nl$/,
+    /dailymotion\.pl$/,
+    /dailymotion\.ru$/,
+  ],
+};
 
 export default socialNetworkRegex;
