@@ -17,7 +17,7 @@ npm install detect-social-network
 
 ```js
 // Using ES6 Import
-import detectSocialNetwork from 'detect-social-network';
+import detectSocialNetwork from "detect-social-network";
 
 const url = "https://twitter.com/jack/status/20";
 const socialNetwork = detectSocialNetwork(url);
@@ -27,7 +27,7 @@ console.log(`The link belongs to: ${socialNetwork}`);
 
 ```js
 // Using CommonJS
-const detectSocialNetwork = require('detect-social-network');
+const detectSocialNetwork = require("detect-social-network");
 
 const url = "https://twitter.com/jack/status/20";
 const socialNetwork = detectSocialNetwork.default(url);
@@ -50,3 +50,4 @@ Currently, detect-social-network can identify the following social networks:
     tumblr
     twitter
     youtube
+    dailymotion
